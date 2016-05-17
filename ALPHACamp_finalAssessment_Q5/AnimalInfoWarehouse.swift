@@ -9,6 +9,7 @@
 import Foundation
 
 class animalInfo {
+    var id:String?
     var name:String?
     var pic:String?
 }

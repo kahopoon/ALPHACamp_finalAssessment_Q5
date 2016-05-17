@@ -10,13 +10,20 @@ import UIKit
 
 class Main_TableViewController: UITableViewController {
 
-    
+    var allAnimalInfoWohooooo:[animalInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         getAnimalInfoAPI_Call { (result) in
-            print(result)
+            let animals = result["result"]["results"].arrayValue
+            for animal in animals {
+                let eachAnimal = animalInfo()
+                eachAnimal.id = animal["_id"].stringValue
+                eachAnimal.name = animal["A_Name_Ch"].stringValue
+                eachAnimal.pic = animal["A_Pic01_URL"].stringValue
+                self.allAnimalInfoWohooooo.append(eachAnimal)
+            }
         }
 
     }
