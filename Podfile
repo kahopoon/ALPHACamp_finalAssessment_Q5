@@ -8,5 +8,6 @@ target 'ALPHACamp_finalAssessment_Q5' do
 	pod 'SwiftyJSON'
 	pod 'SDWebImage'
 	pod 'PKHUD'
+	pod 'IQKeyboardManager'
 end
 

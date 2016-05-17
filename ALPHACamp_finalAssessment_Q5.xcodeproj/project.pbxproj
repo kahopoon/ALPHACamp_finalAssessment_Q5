@@ -15,6 +15,7 @@
 		11B749CE1CEB0F410036243B /* Main_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */; };
 		11B749D01CEB11590036243B /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749CF1CEB11590036243B /* APICall.swift */; };
 		11B749D21CEB12310036243B /* AnimalInfoWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749D11CEB12310036243B /* AnimalInfoWarehouse.swift */; };
+		11B749D51CEB19380036243B /* insertRecord_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749D41CEB19380036243B /* insertRecord_ViewController.swift */; };
 		54ED3E74D79F673622DE2F9A /* Pods_ALPHACamp_finalAssessment_Q5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_TableViewCell.swift; sourceTree = "<group>"; };
 		11B749CF1CEB11590036243B /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		11B749D11CEB12310036243B /* AnimalInfoWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalInfoWarehouse.swift; sourceTree = "<group>"; };
+		11B749D41CEB19380036243B /* insertRecord_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = insertRecord_ViewController.swift; sourceTree = "<group>"; };
 		B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				11B749CA1CEB0EE90036243B /* APICall */,
 				11B749D31CEB12380036243B /* DataModel */,
 				1179B4511CEA0EF10077C57D /* AppDelegate.swift */,
+				11B749D41CEB19380036243B /* insertRecord_ViewController.swift */,
 				11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */,
 				11B749CB1CEB0F280036243B /* Main_TableViewController.swift */,
 				1179B4551CEA0EF10077C57D /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B749D51CEB19380036243B /* insertRecord_ViewController.swift in Sources */,
 				1179B4521CEA0EF10077C57D /* AppDelegate.swift in Sources */,
 				11B749D21CEB12310036243B /* AnimalInfoWarehouse.swift in Sources */,
 				11B749CE1CEB0F410036243B /* Main_TableViewCell.swift in Sources */,

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3B35BFDCFF2A9B5E4E133EEF4DB41BEB</key>
+		<key>1616897F78B2248703790FBE148FF74B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4437B26205647A66ABC6DC4E60573300</key>
+		<key>17DA6BD6772E8985F204299700C59D92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E59F5A7193B7BDBE43726349021241C7</key>
+		<key>C3088D509DCC08B3E07004508CF0BCC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F6F0516F82D07656D12F1C0716898F73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF84D9D0BD8D2D1709800C3F7BA63F4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
