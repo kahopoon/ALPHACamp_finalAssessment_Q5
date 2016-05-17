@@ -38,6 +38,8 @@ class Main_TableViewController: UITableViewController, passInsertionBack {
                 allAnimalInfoWohooooo.append(eachAnimal)
             }
         }
+        // reverse order to show from update to old
+        allAnimalInfoWohooooo = allAnimalInfoWohooooo.reverse()
         // load internet data
         getAnimalInfoAPI_Call { (result) in
             var currentID = self.userInsertionIDSequence

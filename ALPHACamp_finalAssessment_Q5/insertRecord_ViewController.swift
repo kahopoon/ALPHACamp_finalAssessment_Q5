@@ -42,7 +42,7 @@ class insertRecord_ViewController: UIViewController, UIImagePickerControllerDele
     
     @IBAction func takePhotoAction(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.sourceType = .Camera
         imagePicker.delegate = self
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
