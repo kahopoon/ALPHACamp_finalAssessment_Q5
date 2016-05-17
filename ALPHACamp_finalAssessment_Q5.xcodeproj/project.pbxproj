@@ -151,6 +151,7 @@
 				TargetAttributes = {
 					1179B44D1CEA0EF10077C57D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KX6H57GMQW;
 					};
 				};
 			};
@@ -359,6 +360,7 @@
 			baseConfigurationReference = B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ALPHACamp_finalAssessment_Q5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kahopoon.ALPHACamp-finalAssessment-Q5";
@@ -371,6 +373,7 @@
 			baseConfigurationReference = FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ALPHACamp_finalAssessment_Q5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kahopoon.ALPHACamp-finalAssessment-Q5";
