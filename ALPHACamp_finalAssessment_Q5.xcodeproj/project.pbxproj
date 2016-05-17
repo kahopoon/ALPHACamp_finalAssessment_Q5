@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1179B4521CEA0EF10077C57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179B4511CEA0EF10077C57D /* AppDelegate.swift */; };
-		1179B4541CEA0EF10077C57D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179B4531CEA0EF10077C57D /* ViewController.swift */; };
 		1179B4571CEA0EF10077C57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1179B4551CEA0EF10077C57D /* Main.storyboard */; };
 		1179B4591CEA0EF10077C57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1179B4581CEA0EF10077C57D /* Assets.xcassets */; };
 		1179B45C1CEA0EF10077C57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1179B45A1CEA0EF10077C57D /* LaunchScreen.storyboard */; };
+		11B749CC1CEB0F280036243B /* Main_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749CB1CEB0F280036243B /* Main_TableViewController.swift */; };
+		11B749CE1CEB0F410036243B /* Main_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */; };
+		11B749D01CEB11590036243B /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749CF1CEB11590036243B /* APICall.swift */; };
+		11B749D21CEB12310036243B /* AnimalInfoWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B749D11CEB12310036243B /* AnimalInfoWarehouse.swift */; };
 		54ED3E74D79F673622DE2F9A /* Pods_ALPHACamp_finalAssessment_Q5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +22,14 @@
 		0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHACamp_finalAssessment_Q5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179B44E1CEA0EF10077C57D /* ALPHACamp_finalAssessment_Q5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALPHACamp_finalAssessment_Q5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179B4511CEA0EF10077C57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1179B4531CEA0EF10077C57D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1179B4561CEA0EF10077C57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1179B4581CEA0EF10077C57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1179B45B1CEA0EF10077C57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1179B45D1CEA0EF10077C57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B749CB1CEB0F280036243B /* Main_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_TableViewController.swift; sourceTree = "<group>"; };
+		11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_TableViewCell.swift; sourceTree = "<group>"; };
+		11B749CF1CEB11590036243B /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		11B749D11CEB12310036243B /* AnimalInfoWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalInfoWarehouse.swift; sourceTree = "<group>"; };
 		B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +67,33 @@
 		1179B4501CEA0EF10077C57D /* ALPHACamp_finalAssessment_Q5 */ = {
 			isa = PBXGroup;
 			children = (
+				11B749CA1CEB0EE90036243B /* APICall */,
+				11B749D31CEB12380036243B /* DataModel */,
 				1179B4511CEA0EF10077C57D /* AppDelegate.swift */,
-				1179B4531CEA0EF10077C57D /* ViewController.swift */,
+				11B749CD1CEB0F410036243B /* Main_TableViewCell.swift */,
+				11B749CB1CEB0F280036243B /* Main_TableViewController.swift */,
 				1179B4551CEA0EF10077C57D /* Main.storyboard */,
 				1179B4581CEA0EF10077C57D /* Assets.xcassets */,
 				1179B45A1CEA0EF10077C57D /* LaunchScreen.storyboard */,
 				1179B45D1CEA0EF10077C57D /* Info.plist */,
 			);
 			path = ALPHACamp_finalAssessment_Q5;
+			sourceTree = "<group>";
+		};
+		11B749CA1CEB0EE90036243B /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				11B749CF1CEB11590036243B /* APICall.swift */,
+			);
+			name = APICall;
+			sourceTree = "<group>";
+		};
+		11B749D31CEB12380036243B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				11B749D11CEB12310036243B /* AnimalInfoWarehouse.swift */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 		9F5E867282EB2E15A46F7B81 /* Frameworks */ = {
@@ -210,8 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1179B4541CEA0EF10077C57D /* ViewController.swift in Sources */,
 				1179B4521CEA0EF10077C57D /* AppDelegate.swift in Sources */,
+				11B749D21CEB12310036243B /* AnimalInfoWarehouse.swift in Sources */,
+				11B749CE1CEB0F410036243B /* Main_TableViewCell.swift in Sources */,
+				11B749D01CEB11590036243B /* APICall.swift in Sources */,
+				11B749CC1CEB0F280036243B /* Main_TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

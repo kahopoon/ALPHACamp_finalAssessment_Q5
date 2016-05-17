@@ -5,22 +5,48 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--臺北市立動物園動物資料-->
+        <!--🐦臺北市立動物園動物資料🐤-->
         <scene sceneID="w4Q-mo-oo9">
             <objects>
-                <tableViewController id="7XP-ki-85k" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="l0R-kr-htY">
+                <tableViewController storyboardIdentifier="Main_TableViewController" id="7XP-ki-85k" customClass="Main_TableViewController" customModule="ALPHACamp_finalAssessment_Q5" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" id="l0R-kr-htY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EgD-aU-6Z3">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Main_TableViewCell" rowHeight="116" id="EgD-aU-6Z3" customClass="Main_TableViewCell" customModule="ALPHACamp_finalAssessment_Q5" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="116"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EgD-aU-6Z3" id="cSw-4L-6F3">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vci-El-Kw1">
+                                            <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="Rog-G2-vtc"/>
+                                                <constraint firstAttribute="height" constant="100" id="vf0-ku-oOy"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動物名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOu-wH-Kqm">
+                                            <rect key="frame" x="124" y="41" width="460" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vci-El-Kw1" firstAttribute="leading" secondItem="cSw-4L-6F3" secondAttribute="leading" constant="8" id="1B9-3z-cHZ"/>
+                                        <constraint firstItem="SOu-wH-Kqm" firstAttribute="centerY" secondItem="vci-El-Kw1" secondAttribute="centerY" id="7sr-h9-dpc"/>
+                                        <constraint firstItem="vci-El-Kw1" firstAttribute="centerY" secondItem="cSw-4L-6F3" secondAttribute="centerY" id="i4A-vx-u8A"/>
+                                        <constraint firstAttribute="trailing" secondItem="SOu-wH-Kqm" secondAttribute="trailing" constant="16" id="iHh-k2-Uba"/>
+                                        <constraint firstItem="SOu-wH-Kqm" firstAttribute="leading" secondItem="vci-El-Kw1" secondAttribute="trailing" constant="16" id="khA-N1-iPr"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="animalName" destination="SOu-wH-Kqm" id="evt-5Q-Ese"/>
+                                    <outlet property="animalPic" destination="vci-El-Kw1" id="kdm-6i-LVF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,7 +54,7 @@
                             <outlet property="delegate" destination="7XP-ki-85k" id="FXX-c0-fxc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="臺北市立動物園動物資料" id="pc8-kp-fDw">
+                    <navigationItem key="navigationItem" title="🐦臺北市立動物園動物資料🐤" id="pc8-kp-fDw">
                         <barButtonItem key="backBarButtonItem" title=" " id="ain-di-lxp"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="I1B-Gc-U2Z">
                             <connections>
@@ -41,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="1095" y="1046"/>
         </scene>
-        <!--View Controller-->
+        <!--新增動物🐒-->
         <scene sceneID="PeQ-BG-Nn8">
             <objects>
                 <viewController id="yVy-BA-ivA" sceneMemberID="viewController">
@@ -54,6 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="新增動物🐒" id="zt8-ri-Dfm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syp-hW-tRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
