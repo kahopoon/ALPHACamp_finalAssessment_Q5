@@ -7,6 +7,6 @@ http://data.taipei/opendata/datalist/datasetMeta?oid=5cb73231-b741-48b3-bec3-2ef
 
 ## App Screen
 ![Alt text](launching.jpg?raw=true "launching")
-![Alt text](mainScreen.jpg.jpg?raw=true "mainScreen")
+![Alt text](mainScreen.jpg?raw=true "mainScreen")
 ![Alt text](insertedRecord.jpg?raw=true "insertedRecord")
 ![Alt text](updatedScreen.jpg?raw=true "updatedScreen") 
