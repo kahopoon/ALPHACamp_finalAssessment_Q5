@@ -6,7 +6,7 @@ Taipei Gov Open Data: Animal of Taipei Zoo
 http://data.taipei/opendata/datalist/datasetMeta?oid=5cb73231-b741-48b3-bec3-2ef57bb10029  
 
 ## App Screen
-![Alt text](launch.jpg?raw=true "launch")
-![Alt text](main.jpg?raw=true "main")
-![Alt text](insertion.jpg?raw=true "insertion")
-![Alt text](update.jpg?raw=true "update") 
+![Alt text](launching.jpg?raw=true "launching")
+![Alt text](mainScreen.jpg.jpg?raw=true "mainScreen")
+![Alt text](insertedRecord.jpg?raw=true "insertedRecord")
+![Alt text](updatedScreen.jpg?raw=true "updatedScreen") 
