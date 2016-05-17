@@ -8,11 +8,18 @@
 
 import UIKit
 
+protocol passInsertionBack: class
+{
+    func sendDataToPreviousVC(name:String, pic:UIImage)
+}
+
 class insertRecord_ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var insertPicFrame: UIImageView!
     @IBOutlet weak var insertNameTextfield: UITextField!
     @IBOutlet weak var insertPicButton, confirmToAddButton: UIButton!
+    
+    weak var insertionDelegate:passInsertionBack?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +42,18 @@ class insertRecord_ViewController: UIViewController, UIImagePickerControllerDele
     
     @IBAction func takePhotoAction(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .Camera
+        imagePicker.sourceType = .PhotoLibrary
         imagePicker.delegate = self
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
 
     @IBAction func confirmToAddAction(sender: AnyObject) {
-        insertPicFrame.image != nil && insertNameTextfield.hasText() ? () : invalidInputWarning()
+        insertPicFrame.image != nil && insertNameTextfield.hasText() ? dataPassBack() : invalidInputWarning()
+    }
+    
+    func dataPassBack() {
+        insertionDelegate?.sendDataToPreviousVC(insertNameTextfield.text!, pic: insertPicFrame.image!)
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func invalidInputWarning() {

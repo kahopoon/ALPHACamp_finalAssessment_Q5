@@ -58,7 +58,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="ain-di-lxp"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="I1B-Gc-U2Z">
                             <connections>
-                                <segue destination="yVy-BA-ivA" kind="show" id="wfu-OP-8SR"/>
+                                <segue destination="yVy-BA-ivA" kind="show" identifier="insertNewAnimal" id="wfu-OP-8SR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
