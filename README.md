@@ -73,3 +73,87 @@ override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
     }
 ```
 nothing special but one thing, as local data's image save on local (...i don't know what i'm talking about...), and data taipei's record image are on internet, in cell, you have to determine which are local and which are from internet and use different method to grep and display.
+
+## Insertion ViewController
+
+### viewDidLoad
+```swift
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        insertPicFrame.layer.borderColor = UIColor.orangeColor().CGColor
+        insertPicFrame.layer.borderWidth = 1
+        insertNameTextfield.layer.borderColor = UIColor.orangeColor().CGColor
+        insertNameTextfield.layer.borderWidth = 1
+        confirmToAddButton.layer.borderColor = UIColor.orangeColor().CGColor
+        confirmToAddButton.layer.borderWidth = 1
+        
+        // default to open camera when view load
+        takePhotoAction(self)
+    }
+ ```
+ nothing special on top, just some appearance settings, the important is load of camera action when view begin (press + button at previous controller)
+ 
+ ### image taking
+ ```swift
+ func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        self.insertPicFrame.image = info["UIImagePickerControllerOriginalImage"] as? UIImage
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func takePhotoAction(sender: AnyObject) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .Camera
+        imagePicker.delegate = self
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+ ```
+ functions to take photos and to display on uiimageview
+ 
+ ### confirm to add action
+ ```swift
+     @IBAction func confirmToAddAction(sender: AnyObject) {
+        insertPicFrame.image != nil && insertNameTextfield.hasText() ? dataPassBack() : invalidInputWarning()
+    }
+    
+    func dataPassBack() {
+        insertionDelegate?.sendDataToPreviousVC(insertNameTextfield.text!, pic: insertPicFrame.image!)
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func invalidInputWarning() {
+        let alertController = UIAlertController(title: "資料還沒填妥喔", message: "請確定已插入照片與動物名稱！", preferredStyle: .Alert)
+        let alertAction = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
+        alertController.addAction(alertAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+ ```
+ when button pressed, it run function confirmToAddAction, it check value of image fame and text field to see whether they both contain data, if no, run invalidInputWarning to warn user, if yes, pass back data by delegate
+ 
+ ### delegate protocol
+ ```swift
+ protocol passInsertionBack: class
+{
+    func sendDataToPreviousVC(name:String, pic:UIImage)
+}
+```
+simple delegation, pass back name string and image in UIImage
+
+### conforming protocol at main TableViewController
+```swift
+func sendDataToPreviousVC(name: String, pic: UIImage) {
+        // save image to file
+        let image:NSData = UIImageJPEGRepresentation(pic, 1)!
+        let imagePath = NSHomeDirectory().stringByAppendingString("/Documents/\(userInsertionIDSequence).jpg")
+        image.writeToFile(imagePath, atomically: true)
+        // save image name to nsdefaults
+        NSUserDefaults.standardUserDefaults().setObject(name, forKey: "nameOfID\(userInsertionIDSequence)")
+        // update sequence
+        userInsertionIDSequence += 1
+        NSUserDefaults.standardUserDefaults().setInteger(userInsertionIDSequence, forKey: "insertionID")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        //
+        getData()
+    }
+ ```
+in this delegate function, it take both data into local saving, and to reload the table view that same from app start
