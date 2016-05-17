@@ -30,7 +30,6 @@ class Main_TableViewController: UITableViewController, passInsertionBack {
         userInsertionIDSequence = NSUserDefaults.standardUserDefaults().integerForKey("insertionID")
         // load local data
         if NSUserDefaults.standardUserDefaults().objectForKey("nameOfID0") != nil {
-            print(NSUserDefaults.standardUserDefaults().objectForKey("nameOfID0"))
             for loop in 0..<userInsertionIDSequence {
                 let eachAnimal = animalInfo()
                 eachAnimal.id = loop
@@ -39,7 +38,6 @@ class Main_TableViewController: UITableViewController, passInsertionBack {
                 allAnimalInfoWohooooo.append(eachAnimal)
             }
         }
-        
         // load internet data
         getAnimalInfoAPI_Call { (result) in
             var currentID = self.userInsertionIDSequence
