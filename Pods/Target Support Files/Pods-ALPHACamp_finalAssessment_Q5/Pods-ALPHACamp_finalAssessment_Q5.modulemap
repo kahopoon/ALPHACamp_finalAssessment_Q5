@@ -1,0 +1,6 @@
+framework module Pods_ALPHACamp_finalAssessment_Q5 {
+  umbrella header "Pods-ALPHACamp_finalAssessment_Q5-umbrella.h"
+
+  export *
+  module * { export * }
+}

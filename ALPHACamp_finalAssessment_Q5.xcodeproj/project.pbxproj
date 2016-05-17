@@ -12,9 +12,11 @@
 		1179B4571CEA0EF10077C57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1179B4551CEA0EF10077C57D /* Main.storyboard */; };
 		1179B4591CEA0EF10077C57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1179B4581CEA0EF10077C57D /* Assets.xcassets */; };
 		1179B45C1CEA0EF10077C57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1179B45A1CEA0EF10077C57D /* LaunchScreen.storyboard */; };
+		54ED3E74D79F673622DE2F9A /* Pods_ALPHACamp_finalAssessment_Q5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHACamp_finalAssessment_Q5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179B44E1CEA0EF10077C57D /* ALPHACamp_finalAssessment_Q5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALPHACamp_finalAssessment_Q5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1179B4511CEA0EF10077C57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1179B4531CEA0EF10077C57D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		1179B4581CEA0EF10077C57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1179B45B1CEA0EF10077C57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1179B45D1CEA0EF10077C57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig"; sourceTree = "<group>"; };
+		FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54ED3E74D79F673622DE2F9A /* Pods_ALPHACamp_finalAssessment_Q5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1179B4501CEA0EF10077C57D /* ALPHACamp_finalAssessment_Q5 */,
 				1179B44F1CEA0EF10077C57D /* Products */,
+				BB40ACAAF4464079B89F1D36 /* Pods */,
+				9F5E867282EB2E15A46F7B81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ALPHACamp_finalAssessment_Q5;
 			sourceTree = "<group>";
 		};
+		9F5E867282EB2E15A46F7B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A655C885D517092494E2789 /* Pods_ALPHACamp_finalAssessment_Q5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB40ACAAF4464079B89F1D36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */,
+				FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1179B4601CEA0EF10077C57D /* Build configuration list for PBXNativeTarget "ALPHACamp_finalAssessment_Q5" */;
 			buildPhases = (
+				215A2198D9ABC6DB4C48CE19 /* 📦 Check Pods Manifest.lock */,
 				1179B44A1CEA0EF10077C57D /* Sources */,
 				1179B44B1CEA0EF10077C57D /* Frameworks */,
 				1179B44C1CEA0EF10077C57D /* Resources */,
+				8DC160F36CF7CA6EF72C9E51 /* 📦 Embed Pods Frameworks */,
+				2E56835175A302B6DC7A4F95 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		215A2198D9ABC6DB4C48CE19 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E56835175A302B6DC7A4F95 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC160F36CF7CA6EF72C9E51 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALPHACamp_finalAssessment_Q5/Pods-ALPHACamp_finalAssessment_Q5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1179B44A1CEA0EF10077C57D /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		1179B4611CEA0EF10077C57D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B753CFEB6C902D8A231148C5 /* Pods-ALPHACamp_finalAssessment_Q5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ALPHACamp_finalAssessment_Q5/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		1179B4621CEA0EF10077C57D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE53631775863DC558B6719 /* Pods-ALPHACamp_finalAssessment_Q5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ALPHACamp_finalAssessment_Q5/Info.plist;
@@ -288,6 +365,7 @@
 				1179B4621CEA0EF10077C57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
